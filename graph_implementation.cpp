@@ -4,6 +4,8 @@ using namespace std;
 int main() {
 
 	//matrix storation  of the graph
+	//Space complexity is given by O(2*E) for undirected graph.
+	//Space complexity is given by O(E) for directed graph.
 
 	int n,m;
 	cin>>n>>m;
