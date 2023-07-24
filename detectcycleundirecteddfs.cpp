@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
+// time complexity ->O(n+2*e)+O(n)
+// space complexity ->O(n)+O(n)~~O(n)
  bool dfs(int n , vector<int> adj[],vector<int> &visited,int parent){
         visited[n]=1;
         for(auto it :adj[n]){
