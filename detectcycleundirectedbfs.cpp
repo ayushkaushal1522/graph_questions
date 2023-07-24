@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
+// time complexity -> O(n+2*e)
+// space complexity -> O(n)+O(n)~~O(n)
  bool bfs(int n , vector<int> adj[],vector<int> &visited){
             // vector<int> visited(n,0);
             visited[n]=1;
