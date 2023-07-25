@@ -1,5 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
+// jab  bhi something before something ka case ho na we should think about applying the topological sort algorithm.
 void dfs(int i ,vector<int> adj[],vector<int> &visited ,stack<int> &st){
 	    visited[i]=1;
 	    for(auto it :adj[i]){
