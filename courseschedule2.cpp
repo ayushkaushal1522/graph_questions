@@ -1,11 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
-// toposort is valid only for the DAG(directed acylic graph)
-// there is a need to make the indegree array in case of the kahn algo.
-// time complexity is given by O(n+e) as it is the directed graph and theis is simple a bfs.
-vector<int> topoSort(int V, vector<int> adj[]) 
-	{
-	    // code here
+vector<int> findOrder(int V, int m, vector<vector<int>> prerequisites) 
+    {
+        vector<int> adj[V];
+	    for(auto it :prerequisites){
+	        adj[it[1]].push_back(it[0]);
+	    }
+	    
 	    vector<int> indegree(V,0);
 	    for(int i=0;i<V;i++){
 	        for(auto it :adj[i]){
@@ -29,10 +30,14 @@ vector<int> topoSort(int V, vector<int> adj[])
 	            }
 	        }
 	    }
-	    return ans;
-	    
-	}
+	   if(ans.size()==V) return ans;
+       return {};
+    }
 int main(){
+
+
+
+
 
 
 
