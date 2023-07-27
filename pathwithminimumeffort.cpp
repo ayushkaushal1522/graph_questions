@@ -1,7 +1,8 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-
+// time complexity is given by Elogv
+// n*m*4*log(n*m)
 
 int MinimumEffort(vector<vector<int>>& heights) {
         // Code here
